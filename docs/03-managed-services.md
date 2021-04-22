@@ -94,7 +94,7 @@ Platform.sh provides [*managed services*](https://docs.platform.sh/configuration
     };
     ```
 5. `git add . && git commit -m "Switch to Postgres."`
-6. `git push origin db`
+6. `git push platform db`
 7. Allow the changes to deploy. When they have finished you're site will contain all of the same collections, but no data. We will need to migrate that data in order to complete the switch to Postgres.
 8. `platform sql < strapi/scripts/postgres_dump.sql`
 9. `platform merge db`
