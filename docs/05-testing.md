@@ -13,6 +13,8 @@ But the hooks we expose in your `.platform.app.yaml` files can also be modified 
 In the FoodAdvisor demo, there is already a test defined for the frontend React app we can test this on:
 
 ```
+// client/package.json
+
   "scripts": {
     ...
     "test": "react-scripts test",
