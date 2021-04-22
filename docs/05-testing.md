@@ -7,4 +7,4 @@
 </p>
 
 
-Move onto [multi-app configuration](05-multi-app.md).
+Move onto [next steps](06-next-steps.md).
