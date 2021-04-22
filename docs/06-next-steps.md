@@ -1,3 +1,11 @@
+<p align="center">
+  <a href="https://platform.sh/marketplace/strapi/">
+    <img src="https://pbs.twimg.com/card_img/1384519264758079489/bLloyf2B?format=jpg&name=900x900" />
+  </a>
+
+  <h1 align="center">Next steps</h1>
+</p>
+
 # Next steps
 
 Congrats! You've completed the workshop. Together we've deployed Strapi's FoodAdvisor demo to Platform.sh. From this point you can customize your application in additional development environments to deliver your own decoupled Strapi-powered site.
