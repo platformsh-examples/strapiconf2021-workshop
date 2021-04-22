@@ -36,7 +36,7 @@ OpenAPI specs are important because not only will they allow you to write tests 
                     - full_documentation.json
     ```
 3. `git add . && git commit -m "Make OpenAPI spec public."`
-4. `git push origin spec`
+4. `git push platform spec`
 5. Verify that the spec is now public, going to `https://api.spec-<generated-url>/docs/spec`
 6. `platform merge spec`
 7. `git checkout master`
