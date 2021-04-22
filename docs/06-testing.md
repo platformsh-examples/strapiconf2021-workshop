@@ -47,4 +47,4 @@ Watch the activity log in the management console for the `tests` environment. Th
 
 5. `platform merge tests`
 
-Move onto [next steps](06-next-steps.md).
+Move onto [next steps](07-next-steps.md).
