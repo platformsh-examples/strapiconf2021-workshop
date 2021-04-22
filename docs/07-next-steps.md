@@ -32,6 +32,10 @@ Congrats! You've completed the workshop. Together we've deployed Strapi's FoodAd
 
 Not satisfied with how the data ends up looking on the final production site? Me neither! 
 
+<p align="center">
+    <img src="images/foodadvisor.png" />
+</p>
+
 Branch a new environment off of `master` and go through the [multi-app configuration steps](05-multi-app.md) to see the complete site using SQLite. 
 
 ## Additional resources
