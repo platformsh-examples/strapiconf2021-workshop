@@ -1,1 +1,1 @@
-# Introduction to Platform.sh
+# An introduction to Strapi on Platform.sh
