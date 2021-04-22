@@ -6,8 +6,6 @@
   <h1 align="center">Next steps</h1>
 </p>
 
-# Next steps
-
 Congrats! You've completed the workshop. Together we've deployed Strapi's FoodAdvisor demo to Platform.sh. From this point you can customize your application in additional development environments to deliver your own decoupled Strapi-powered site.
 
 ## Considerations
