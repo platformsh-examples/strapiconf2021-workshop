@@ -6,4 +6,6 @@
   <h1 align="center">Managed services</h1>
 </p>
 
+3. `platform sql < postgres_dump.sql`
+
 Move onto [environment variables](04-env-variables.md).
