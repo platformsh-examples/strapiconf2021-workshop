@@ -8,9 +8,8 @@
 
 Platform.sh provides [*managed services*](https://docs.platform.sh/configuration/services.html) - services that can easily be added and updated via our configuration YAML file, `.platform/services.yaml`. From this file, we can add any number of services to our project, and here we are going to switch out SQLite for PostgreSQL.
 
-1. `git checkout master`
-2. `platform environment:branch db`
-3. **Add the following to `.platform/services.yaml`**:
+1. `platform environment:branch db`
+2. **Add the following to `.platform/services.yaml`**:
 
     ```yaml      
     dbpostgres:
@@ -18,13 +17,13 @@ Platform.sh provides [*managed services*](https://docs.platform.sh/configuration
         disk: 256
     ```
     
-4. **Add the following block to `strapi/.platform.app.yaml`**:
+3. **Add the following block to `strapi/.platform.app.yaml`**:
 
     ```yaml
     relationships:
         database: "dbpostgres:postgresql"
     ```
-5. **Modify `strapi/config/database.js` to contain the following**:
+4. **Modify `strapi/config/database.js` to contain the following**:
 
     ```js
     // config/database.js
@@ -94,12 +93,18 @@ Platform.sh provides [*managed services*](https://docs.platform.sh/configuration
       }
     };
     ```
-6. `git add . && git commit -m "Switch to Postgres."`
-7. `git push platform db`
-8. Allow the changes to deploy. When they have finished you're site will contain all of the same collections, but no data. We will need to migrate that data in order to complete the switch to Postgres.
-9. `platform sql < postgres_dump.sql`
-10. `platform merge db`
-11. `git checkout master`
-12. `platform sql < scripts/postgres_dump.sql`
+5. `git add . && git commit -m "Switch to Postgres."`
+6. `git push origin db`
+7. Allow the changes to deploy. When they have finished you're site will contain all of the same collections, but no data. We will need to migrate that data in order to complete the switch to Postgres.
+8. `platform sql < strapi/scripts/postgres_dump.sql`
+9. `platform merge db`
+10. `git checkout master`
+11. `git merge db`
+
+Once we merge, you will notice that you once again are asked to create an admin user. Data flows down to child branches, but not up. We will need to migrate the data to `master`:
+
+12. `platform sql < strapi/scripts/postgres_dump.sql`
+
+And then for the final time re-create your admin user account.
 
 Move onto [multi-app configuration](05-multi-app.md).
