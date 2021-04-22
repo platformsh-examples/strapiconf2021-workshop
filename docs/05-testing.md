@@ -39,6 +39,8 @@ In the block above we call the test after the frontend app has already started r
 4. `git add . && git commit -m "Add a test to the frontend.`
 5. `git push platform tests`
 
-Watch the activity log in the management console for the `tests` environment. 
+Watch the activity log in the management console for the `tests` environment. The test should pass, giving you a successful deployment. 
+
+5. `platform merge tests`
 
 Move onto [next steps](06-next-steps.md).
