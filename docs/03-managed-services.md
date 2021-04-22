@@ -100,6 +100,6 @@ Platform.sh provides [*managed services*](https://docs.platform.sh/configuration
 9. `platform sql < postgres_dump.sql`
 10. `platform merge db`
 11. `git checkout master`
-12. `platform sql < postgres_dump.sql`
+12. `platform sql < scripts/postgres_dump.sql`
 
 Move onto [multi-app configuration](05-multi-app.md).
