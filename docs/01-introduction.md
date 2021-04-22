@@ -19,7 +19,11 @@
 ## Strapi on Platform.sh
 
 - Configuration basics
-- Read-only filesystems
+- Routes
+- Applications
+- Services
+- Dependencies, builds, and hooks
+- Read-only filesystems and mounts
 - Environment variables
 
 Move onto [development environments](02-dev-environments.md).
