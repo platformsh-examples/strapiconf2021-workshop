@@ -9,7 +9,7 @@
     <strong>StrapiConf 2021 - Thursday, April 22 | 1:30PM PST</strong>
     <br />
         <br />
-      <a href="https://console.platform.sh/projects/create-project?template=https://github.com/chadwcarlson/instructions.git">
+      <a href="https://console.platform.sh/projects/create-project?template=https://github.com/platformsh-examples/strapiconf2021-workshop.git">
         <img src="https://platform.sh/images/deploy/lg-blue.svg" alt="Deploy on Platform.sh" width="200px" />
     </a>
         <br />
