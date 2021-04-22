@@ -18,14 +18,14 @@ You'll see the Platform.sh-provided environment variables come with the `PLATFOR
 
 1. `git checkout master`
 2. `platform environment:branch email`
-3. Allow the environment to deploy. Once it has finished, go to the **Settings** tab for the `email` environment and turn on Outgoing emails. You will not need to perform this step on production, only on development environments (emails are turned off by default in development).
+3. Allow the environment to deploy. Once it has finished, go to the **Settings** tab for the `email` environment and **turn on Outgoing emails**. You will not need to perform this step on production, only on development environments (emails are turned off by default in development).
 
 <p align="center">
     <img src="https://docs.platform.sh/images/management-console/env-email.png" />
 </p>
 
-4. Add a new file called `plugins.js`: `touch strapi/config/plugins.js`
-5. Place the following in `plugins.js`:
+4. **Add a new file called `plugins.js`**: `touch strapi/config/plugins.js`
+5. **Place the following in `plugins.js`**:
 
 ```js
 // strapi/config/plugins.js
@@ -45,7 +45,7 @@ module.exports = ({ env }) => ({
   });
 ```
 
-6. Modify `strapi/config/server.js` to contain the following:
+6. **Modify `strapi/config/server.js` to contain the following**:
 
 ```js
 // strapi/config/server.js
