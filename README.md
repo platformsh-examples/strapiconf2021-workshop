@@ -19,7 +19,7 @@
 
 This workshop will take you through the steps of building a production-ready Strapi instance on Platform.sh. Platform.sh is a second-generation Platform-as-a-Service built especially for continuous deployment. It allows you to host web applications on the cloud while making your development and testing workflows more productive.
 
-During this workshop, we will be using [Strapi's FoodAdvisor demo](https://github.com/strapi/foodadvisor/tree/master/api) as a guide. We'll deploy an updated version of that repository to Platform.sh, and then we'll make incremental changes as we build out the app, exploring how configuration and deployments work along the way.
+During this workshop, we will be using [Strapi's FoodAdvisor demo](https://github.com/strapi/foodadvisor) as a guide. We'll deploy an updated version of that repository to Platform.sh, and then we'll make incremental changes as we build out the app, exploring how configuration and deployments work along the way.
 
 * [Before the workshop](#before-the-workshop)
 * [Workshop outline](#workshop-outline)
@@ -64,7 +64,7 @@ Once you have created a project and installed the CLI, you're nearly ready for t
 platform project:get -p PROJECT_ID
 ```
 
-#### 5. (Optional) Creating and admin user
+#### 5. (Optional) Creating an admin user
 
 Once you have deployed this repository, you will have a demo Strapi instance available on your project that will be accessible from a generated url of the form `api.master-<hash_string>.<REGION>.platform.site`. You can visit that URL at `/admin` and create an admin user to have a quick walkthrough of the demo project. You will see that it has been seeded with a restaurant review backend (courtesy of FoodAdvisor).
 
@@ -85,36 +85,30 @@ We will use Zoom as our primary method for going through steps, and breakout roo
 
 ### Outline
 
-The workshop will take you from the initial demo repository to a multi-app restaurant review site (the full Food Advisor demo), using PostgreSQL as the primary database. Along the way we'll go through the following steps:
+This workshop will take you from the initial demo repository to a multi-app restaurant review site (the full Food Advisor demo), using PostgreSQL as the primary database. Along the way we'll go through the following steps:
 
-1. **Platform.sh introduction:** 
-2. **Development environments:**
-3. **Managed services:**
-4. **Environment variables:**
-5. **Testing:**
-6. **Multi-app configuration:**
-
-
-
-Generally, the workshop will have the following parts:
-
-1. **Platform.sh introduction:** 
-
-    - a tour of the management console
-    - the Platform.sh philosophy
-    - the basics of a project
-    - the basics of configuration 
-    - the basics of environments
-    - the basics of the demo/repository
-
-2. **Environments and environment variables:** enabling e-mail for forgotten passwords.
-3. **Managed services:** adding PostgreSQL, and using it as your primary database.
-4. **Testing:** set up basic testing modifying public permissions, and testing your API using Postman.
-5. **Managing secrets:** using Vault to secure access to your application.
-6. **Caching:** using [`strapi-middleware-cache`](https://github.com/patrixr/strapi-middleware-cache) and [Redis](https://docs.platform.sh/configuration/services/redis.html) for caching.
-7. **Next steps:** runtime write access, multi-app projects, and additional resources. 
+1. **Platform.sh introduction:** We'll first cover Platform.sh - what it is, how it works, and the basic concepts to get you started with the workshop.
+2. **Development environments:** Here we'll start making changes to Strapi, by first making the generated OpenAPI specification publicly accessible. 
+3. **Managed services:** The demo starts out using SQLite to store the FoodAdvisor data. In this step, we'll use Platform.sh's service configuration to switch that out with PostgreSQL.
+5. **Environment variables:** Environment variables allow you to define a repeatable build across environments that utilized environment-specific information. In this step, we'll look at some of the Platform.sh-provided environment variables to enable e-mail for password retrieval.
+6. **Testing:** Platform.sh contains three main hooks - build, deploy, and post deploy. In those hooks you can not only define how your Strapi application's builds, but also define your entire CI pipeline tests to be run on every commit. In this step, we'll add one of these tests. 
+7. **Multi-app configuration:** Platform.sh is unique when it comes to decoupled applications. Our configuration supports multiple applications in a single project, where each get their own containers that can communicate with each other. Here we'll add the frontend ReactJS FoodAdvisor application to the cluster, and finish building our restaurant review site. 
+8. **Next steps:** Strapi, like many frameworks and applications, comes with some caveats when working with it on Platform.sh. Here we'll review some of the choices that were made in this demo and why, some creative configuration that can be used to extend Strapi in certain ways, and additional resources from Platform.sh that you can look at after the workshop. 
 
 ### Contacts
+
+During StrapiConf, members of the Platform.sh team will be present on the StrapiConf Discord in the following channels:
+
+- `#platform-sh-text`
+- `#platform-sh-voice`
+
+At any time during the conference feel free to message our team for more information about Platform.sh. 
+
+During the workshop itself, however, we will use the `#platform-sh-workshop` primarily for questions and help. 
+
+Your primary contacts during the workshop will be Chad Carlson, Robert Douglass, and Guillaume Moigneu. 
+
+We will use Zoom as our primary method for going through steps, and breakout rooms for detailed help on individual steps. 
 
 We will guide you through the steps during the workshop, with all code snippets and changes documented in the links above. 
 
