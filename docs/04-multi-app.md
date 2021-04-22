@@ -14,7 +14,9 @@ On Platform.sh, we can keep this codebase in the same repository as Strapi, nest
     <img src="https://docs.platform.sh/images/config-diagrams/multiple-applications.png" />
 </p>
 
-1. **Modify your `.platform/routes.yaml` to contain the following**:
+1. `git checkout master`
+2. `platform environment:branch frontend`
+3. **Modify your `.platform/routes.yaml` to contain the following**:
 
     ```yaml
     # .platform/routes.yaml
@@ -37,8 +39,8 @@ On Platform.sh, we can keep this codebase in the same repository as Strapi, nest
         to: "https://www.{default}/"
     ```
     
-2. **Create a `.platform.app.yaml` file for the frontend application**: `touch frontend/.platform.app.yaml`
-3. **Modify your `frontend/.platform.app.yaml` to contain the following**:
+4. **Create a `.platform.app.yaml` file for the frontend application**: `touch frontend/.platform.app.yaml`
+5. **Modify your `frontend/.platform.app.yaml` to contain the following**:
 
     ```yaml
     # client/.platform.app.yaml
@@ -74,5 +76,15 @@ On Platform.sh, we can keep this codebase in the same repository as Strapi, nest
             source_path: cache
     ```
 
+6. **Create a `.environment` file to define some environment variables**: `touch client/.environment`
+7. **Include the following in `client/.environment`**:
+
+    ```txt
+    ENVIRONMENT=$(echo $PLATFORM_ROUTES | base64 --decode | jq -r 'to_entries[] | select(.value.id == "api") | .key')
+    export BACKEND_URL=${ENVIRONMENT%/}
+    ```
+    
+8. `git add . && git commit -m "Add a frontend app."
+9. `git push platform frontend`
 
 Move onto [testing](05-testing.md).
