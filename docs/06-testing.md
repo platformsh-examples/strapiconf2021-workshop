@@ -34,7 +34,9 @@ All we need to do is place the call for this test (`yarn test`) into one of our 
     ```yaml
     deploy: |
         set -e
-        export CI=true && yarn test
+        if [ "$PLATFORM_BRANCH" != master ]; then
+            export CI=true && yarn test
+        fi 
     ```
     
 In the block above we call the test after the frontend app has already started running in the start command, preceded by `set -e`. `set -e` ensures that should the tests fail, the deployment will fail, which allows us to place restrictions on our repository (i.e. cannot merge without passing deployment & passed tests). 
