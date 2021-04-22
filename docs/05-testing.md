@@ -26,7 +26,7 @@ All we need to do is place the call for this test (`yarn test`) into one of our 
 
 1. `git checkout master`
 2. `platform environment:branch tests`
-3. Add the following deploy hook to `client/.platform.app.yaml`:
+3. **Add the following deploy hook to `client/.platform.app.yaml`**:
 
     ```yaml
     deploy: |
