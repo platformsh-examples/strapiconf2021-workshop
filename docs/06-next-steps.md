@@ -13,6 +13,7 @@ Congrats! You've completed the workshop. Together we've deployed Strapi's FoodAd
 
 - Keeping your work: [setting up an integration](https://docs.platform.sh/integrations/source.html)
 - Strapi development servers, and write access
+- Editorial workflows and the flow of data on Platform.sh
 - Lifecycle hooks & Gatsby Live Preview/Incremental builds
 
 ## Additional resources
