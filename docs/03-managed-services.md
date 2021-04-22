@@ -102,4 +102,4 @@ Platform.sh provides [*managed services*](https://docs.platform.sh/configuration
 11. `git checkout master`
 12. `platform sql < postgres_dump.sql`
 
-Move onto [environment variables](04-env-variables.md).
+Move onto [multi-app configuration](05-multi-app.md).
