@@ -26,7 +26,6 @@ OpenAPI specs are important because not only will they allow you to write tests 
     web:
         commands:
             start: NODE_ENV=production yarn start
-
         locations:
             # For serving the generated OpenAPI specification as part of the documentation.
             "/docs/spec":
