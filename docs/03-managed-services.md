@@ -5,3 +5,5 @@
 
   <h1 align="center">Managed services</h1>
 </p>
+
+Move onto [environment variables](04-env-variables.md).
