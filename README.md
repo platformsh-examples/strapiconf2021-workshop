@@ -1,3 +1,24 @@
+<p align="center">
+  <a href="https://github.com/github_username/repo_name">
+    <img src="https://pbs.twimg.com/card_img/1384519264758079489/bLloyf2B?format=jpg&name=900x900" />
+  </a>
+
+  <h2 align="center">Build a production Strapi instance service by service with Platform.sh</h2>
+
+  <p align="center">
+    <strong>StrapiConf 2021 - Thursday, April 22 | 1:30PM PST</strong>
+    <br />
+    <a href="https://github.com/github_username/repo_name"><strong>Explore the docs »</strong></a>
+    <br />
+    <br />
+    <a href="https://github.com/github_username/repo_name">View Demo</a>
+    ·
+    <a href="https://github.com/github_username/repo_name/issues">Report Bug</a>
+    ·
+    <a href="https://github.com/github_username/repo_name/issues">Request Feature</a>
+  </p>
+</p>
+
 # Platform.sh StrapiConf 2021 Workshop
 
 Hello StrapiConf! 
