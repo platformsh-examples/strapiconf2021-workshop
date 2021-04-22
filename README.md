@@ -8,7 +8,10 @@
   <p align="center">
     <strong>StrapiConf 2021 - Thursday, April 22 | 1:30PM PST</strong>
     <br />
-    <a href="https://github.com/github_username/repo_name"><strong>Explore the docs »</strong></a>
+    <br />
+      <a href="https://console.platform.sh/projects/create-project?template=https://raw.githubusercontent.com/platformsh/template-builder/master/templates/strapi/.platform.template.yaml&utm_content=strapi&utm_source=github&utm_medium=button&utm_campaign=deploy_on_platform">
+        <img src="https://platform.sh/images/deploy/lg-blue.svg" alt="Deploy on Platform.sh" width="180px" />
+    </a>
     <br />
     <br />
     <a href="https://github.com/github_username/repo_name">View Demo</a>
