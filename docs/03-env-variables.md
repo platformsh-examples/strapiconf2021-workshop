@@ -20,9 +20,68 @@ You'll see the Platform.sh-provided environment variables come with the `PLATFOR
 2. `platform environment:branch email`
 3. Allow the environment to deploy. Once it has finished, go to the **Settings** tab for the `email` environment and turn on Outgoing emails. You will not need to perform this step on production, only on development environments (emails are turned off by default in development).
 
-
 <p align="center">
     <img src="https://docs.platform.sh/images/management-console/env-email.png" />
 </p>
+
+4. Add a new file called `plugins.js`: `touch strapi/config/plugins.js`
+5. Place the following in `plugins.js`:
+
+```js
+// strapi/config/plugins.js
+
+module.exports = ({ env }) => ({
+    email: {
+      provider: 'nodemailer',
+      providerOptions: {
+        host: env('PLATFORM_SMTP_HOST', 'smtp.example.com'),
+        port: env('PLATFORM_SMTP_PORT', 25),
+      },
+      settings: {
+        defaultFrom: 'no-reply@strapi.io',
+        defaultReplyTo: 'no-reply@strapi.io',
+      }
+    }
+  });
+```
+
+6. Modify `strapi/config/server.js` to contain the following:
+
+```js
+// strapi/config/server.js
+
+const forgotPasswordTemplate = {
+    subject: "Strapi: Reset your password",
+    html: `<p>We heard that you lost your password. Sorry about that!</p>
+        <p>But don’t worry! You can use the following link to reset it:</p>
+        <p><a href="<%= url %>">Reset password</a></p>
+        <p>Thanks!</p>`,
+    text: `We heard that you lost your password. Sorry about that!
+    But don’t worry! You can use the following link to reset it:
+    <%= url %>
+    Thanks!`
+}
+
+module.exports = ({ env }) => ({
+  admin: {
+    auth: {
+      secret: env('ADMIN_JWT_SECRET'),
+    },
+    forgotPassword: {
+      emailTemplate: forgotPasswordTemplate
+    }
+  },
+  host: env('HOST', '0.0.0.0'),
+  port: env.int('PORT', 1337),
+  cron: {
+    enabled: true
+  }
+});
+```
+
+7. `git add . && git commit -m "Add e-mail support."`
+8. `git push platform email`
+9. Verify that you can click the *Forgot password* link, submit, and receive an email to reset your password. 
+10. `platform merge email`
 
 Move onto [multi-app configuration](04-multi-app.md).
