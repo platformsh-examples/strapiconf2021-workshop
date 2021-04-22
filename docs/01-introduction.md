@@ -6,11 +6,20 @@
   <h1 align="center">An introduction to Strapi on Platform.sh</h1>
 </p>
 
-# Platform.sh
+## Platform.sh basics
 
 - Git-driven infrastructure
 - Infrastructure-as-code
-- 
+- Your project is a cluster of containers
+- Environments
+- Data inheritance
+- The management console
+- The Platform.sh CLI
 
+## Strapi on Platform.sh
+
+- Configuration basics
+- Read-only filesystems
+- Environment variables
 
 Move onto [development environments](02-dev-environments.md).
