@@ -80,6 +80,8 @@ On Platform.sh, we can keep this codebase in the same repository as Strapi, nest
 7. **Include the following in `client/.environment`**:
 
     ```txt
+    # client/.environment
+    
     ENVIRONMENT=$(echo $PLATFORM_ROUTES | base64 --decode | jq -r 'to_entries[] | select(.value.id == "api") | .key')
     export BACKEND_URL=${ENVIRONMENT%/}
     ```
