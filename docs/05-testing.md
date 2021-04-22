@@ -8,7 +8,7 @@
 
 Platform.sh allows you to integrate your applications with your existing testing pipelines. This includes CircleCI, Jenkins, GitHub Actions - anything you already have set up can run alongside deployment integrations. 
 
-But the hooks we expose in your `.platform.app.yaml` files can also be modified to run tests as a part of your builds and deploys. Should you want to, you could very well move all of your tests into the environment itself, giving you access to your application code, your services, and much more available there. 
+But the hooks we expose in your `.platform.app.yaml` files can also be modified to run tests as a part of your builds and deploys. Should you want to, you could very well move all of your tests into the environment itself, giving you access to your application code, your services, and much more available there (including production data). 
 
 In the FoodAdvisor demo, there is already a test defined for the frontend React app we can test this on:
 
