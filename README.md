@@ -6,7 +6,7 @@ This workshop will take you through the steps of building a production-ready Str
 
 Platform.sh is a second-generation Platform-as-a-Service built especially for continuous deployment. It allows you to host web applications on the cloud while making your development and testing workflows more productive.
 
-During this workshop, we will be using [Strapi's FoodAdvisor demo](https://github.com/strapi/foodadvisor/tree/master/api) as a guide. We'll deploy an updated version of that repository to Platform.sh, and then we will progressively add more of Platform.sh's managed services, exploring how configuration and deployments work along the way.
+During this workshop, we will be using [Strapi's FoodAdvisor demo](https://github.com/strapi/foodadvisor/tree/master/api) as a guide. We'll deploy an updated version of that repository to Platform.sh, and then we'll make incremental changes as we build out the app, exploring how configuration and deployments work along the way.
 
 ## Before the workshop
 
