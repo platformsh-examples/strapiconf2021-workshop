@@ -13,21 +13,11 @@
         <img src="https://platform.sh/images/deploy/lg-blue.svg" alt="Deploy on Platform.sh" width="180px" />
     </a>
         <br />
-  <h2 align="center">Hello StrapiConf!</h2>
     <br />
-<p align="center">This workshop will take you through the steps of building a production-ready Strapi instance on Platform.sh. Platform.sh is a second-generation Platform-as-a-Service built especially for continuous deployment. It allows you to host web applications on the cloud while making your development and testing workflows more productive.</p>
 
-<p align="center">During this workshop, we will be using <a href="https://github.com/strapi/foodadvisor/tree/master/api">Strapi's FoodAdvisor demo</a> as a guide. We'll deploy an updated version of that repository to Platform.sh, and then we'll make incremental changes as we build out the app, exploring how configuration and deployments work along the way.</p>
-  </p>
 </p>
 
-# Platform.sh StrapiConf 2021 Workshop
-
-Hello StrapiConf! 
-
-This workshop will take you through the steps of building a production-ready Strapi instance on Platform.sh. 
-
-Platform.sh is a second-generation Platform-as-a-Service built especially for continuous deployment. It allows you to host web applications on the cloud while making your development and testing workflows more productive.
+This workshop will take you through the steps of building a production-ready Strapi instance on Platform.sh. Platform.sh is a second-generation Platform-as-a-Service built especially for continuous deployment. It allows you to host web applications on the cloud while making your development and testing workflows more productive.
 
 During this workshop, we will be using [Strapi's FoodAdvisor demo](https://github.com/strapi/foodadvisor/tree/master/api) as a guide. We'll deploy an updated version of that repository to Platform.sh, and then we'll make incremental changes as we build out the app, exploring how configuration and deployments work along the way.
 
