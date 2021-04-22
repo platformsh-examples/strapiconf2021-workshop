@@ -9,7 +9,7 @@
 At any time you can branch your production environment into a development environment, which will contain a byte-level copy of your application code, your infrastructure configuration, and your production data. Once you have done that, you can test changes to code and infrastructure to generate a new build image that can become the production application. 
 
 <p align="center">
-    <img src="https://docs.platform.sh/images/management-console/environments.png" />
+    <img style="max-width: 200px;" src="https://docs.platform.sh/images/management-console/environments.png" />
 </p>
 
 
@@ -20,7 +20,22 @@ Strapi automatically generates an OpenAPI 3.0 specification of your api when it 
 OpenAPI specs are important because not only will they allow you to write tests with tools like Postman and Newman, but it gives you the option to make your API public and consumable by everyone. With the specification, anyone can write an application to consume your data, including additional apps in this project (more on this later). 
 
 1. `platform environment:branch spec`
-2. 
+2. Add the following `locations` block to your `web` key in `strapi/.platform.app.yaml`
+
+    ```yaml
+    web:
+        commands:
+            start: NODE_ENV=production yarn start
+
+        locations:
+            # For serving the generated OpenAPI specification as part of the documentation.
+            "/docs/spec":
+                root: "extensions/documentation/documentation/1.0.0"
+                allow: true
+                scripts: false
+                index:
+                    - full_documentation.json
+    ```
 
 
 
