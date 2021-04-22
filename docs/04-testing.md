@@ -7,4 +7,4 @@
 </p>
 
 
-Move onto [testing](04-testing.md).
+Move onto [multi-app configuration](05-multi-app.md).
