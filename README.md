@@ -104,15 +104,7 @@ During StrapiConf, members of the Platform.sh team will be present on the Strapi
 
 At any time during the conference feel free to message our team for more information about Platform.sh. 
 
-During the workshop itself, however, we will use the `#platform-sh-workshop` primarily for questions and help. 
-
-Your primary contacts during the workshop will be Chad Carlson, Robert Douglass, and Guillaume Moigneu. 
-
-We will use Zoom as our primary method for going through steps, and breakout rooms for detailed help on individual steps. 
-
-We will guide you through the steps during the workshop, with all code snippets and changes documented in the links above. 
-
-Excited to see you at this year's StrapiConf!
+During the workshop itself, however, we will use the **`#platform-sh-workshop`** primarily for questions and help. Your primary contacts during the workshop will be Chad Carlson, Robert Douglass, and Guillaume Moigneu. We will use Zoom as the main method for going through the workshop, and breakout rooms for detailed help on individual steps. Each of those steps has its own page in `/docs` that will contain all of the code snippets you'll need to complete the site. 
 
 ### Get started
 
