@@ -14,9 +14,8 @@ On Platform.sh, we can keep this codebase in the same repository as Strapi, nest
     <img src="https://docs.platform.sh/images/config-diagrams/multiple-applications.png" />
 </p>
 
-1. `git checkout master`
-2. `platform environment:branch frontend`
-3. **Modify your `.platform/routes.yaml` to contain the following**:
+1. `platform environment:branch frontend`
+2. **Modify your `.platform/routes.yaml` to contain the following**:
 
     ```yaml
     # .platform/routes.yaml
@@ -39,8 +38,8 @@ On Platform.sh, we can keep this codebase in the same repository as Strapi, nest
         to: "https://www.{default}/"
     ```
     
-4. **Create a `.platform.app.yaml` file for the frontend application**: `touch frontend/.platform.app.yaml`
-5. **Modify your `frontend/.platform.app.yaml` to contain the following**:
+4. **Create a `.platform.app.yaml` file for the frontend application**: `touch client/.platform.app.yaml`
+5. **Modify your `client/.platform.app.yaml` to contain the following**:
 
     ```yaml
     # client/.platform.app.yaml
@@ -83,7 +82,20 @@ On Platform.sh, we can keep this codebase in the same repository as Strapi, nest
     export BACKEND_URL=${ENVIRONMENT%/}
     ```
     
-8. `git add . && git commit -m "Add a frontend app."`
-9. `git push platform frontend`
+Before we push, notice that the `frontend` environment has inherited a PostgreSQL database, complete with our now production data.
 
-Move onto [testing](06-testing.md).
+8. `git add . && git commit -m "Add a frontend app."`
+9. `git push origin frontend`
+10. `platform merge frontend`
+11. `git checkout master`
+12. `git merge frontend`
+
+> **Note**
+> 
+> At this point we have a production environment + 3 development environments, the limit for the free trial. Before going onto the next step, we're going to deactivate the first environment we created. Run the command:
+>
+> ```
+> platform environment:deactivate spec
+> ```
+
+Then, move onto [testing](06-testing.md).
