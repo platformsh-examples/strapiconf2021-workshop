@@ -23,6 +23,8 @@ During this workshop, we will be using [Strapi's FoodAdvisor demo](https://githu
 
 * [Before the workshop](#before-the-workshop)
 * [Workshop outline](#workshop-outline)
+* [Contacts](#contacts)
+* [Get started](#get-started)
 
 ### Before the workshop
 
@@ -64,7 +66,7 @@ platform project:get -p PROJECT_ID
 
 #### 5. (Optional) Creating and admin user
 
-Once you have deployed this repository, you will have a demo Strapi instance available on your project that will be accessible from a generated url of the form `api.master-<hash_string>.<REGION>.platform.site`. 
+Once you have deployed this repository, you will have a demo Strapi instance available on your project that will be accessible from a generated url of the form `api.master-<hash_string>.<REGION>.platform.site`. You can visit that URL at `/admin` and create an admin user to have a quick walkthrough of the demo project. You will see that it has been seeded with a restaurant review backend (courtesy of FoodAdvisor).
 
 ### Workshop outline
 
@@ -112,6 +114,12 @@ Generally, the workshop will have the following parts:
 6. **Caching:** using [`strapi-middleware-cache`](https://github.com/patrixr/strapi-middleware-cache) and [Redis](https://docs.platform.sh/configuration/services/redis.html) for caching.
 7. **Next steps:** runtime write access, multi-app projects, and additional resources. 
 
+### Contacts
+
 We will guide you through the steps during the workshop, with all code snippets and changes documented in the links above. 
 
 Excited to see you at this year's StrapiConf!
+
+### Get started
+
+If you've completed all of the [*Before the workshop*](#before-the-workshop) steps above, feel free to move onto the [Introduction](docs/01-introduction.md).
