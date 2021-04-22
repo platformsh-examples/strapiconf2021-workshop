@@ -85,7 +85,7 @@ On Platform.sh, we can keep this codebase in the same repository as Strapi, nest
 Before we push, notice that the `frontend` environment has inherited a PostgreSQL database, complete with our now production data.
 
 8. `git add . && git commit -m "Add a frontend app."`
-9. `git push origin frontend`
+9. `git push platform frontend`
 10. `platform merge frontend`
 11. `git checkout master`
 12. `git merge frontend`
