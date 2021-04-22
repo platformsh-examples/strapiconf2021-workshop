@@ -10,7 +10,7 @@
     <br />
         <br />
       <a href="https://console.platform.sh/projects/create-project?template=https://raw.githubusercontent.com/platformsh/template-builder/master/templates/strapi/.platform.template.yaml&utm_content=strapi&utm_source=github&utm_medium=button&utm_campaign=deploy_on_platform">
-        <img src="https://platform.sh/images/deploy/lg-blue.svg" alt="Deploy on Platform.sh" width="180px" />
+        <img src="https://platform.sh/images/deploy/lg-blue.svg" alt="Deploy on Platform.sh" width="250px" />
     </a>
         <br />
     <br />
@@ -21,23 +21,20 @@ This workshop will take you through the steps of building a production-ready Str
 
 During this workshop, we will be using [Strapi's FoodAdvisor demo](https://github.com/strapi/foodadvisor/tree/master/api) as a guide. We'll deploy an updated version of that repository to Platform.sh, and then we'll make incremental changes as we build out the app, exploring how configuration and deployments work along the way.
 
-## Before the workshop
+* [Before the workshop](#before-the-workshop)
+* [Workshop outline](#workshop-outline)
 
-### 1. Sign up and create a project
+### Before the workshop
 
-Before the conference, you should take the time to deploy this repository on Platform.sh and create a free trial account. It doesn't take long, all you need to do is click the button below to start. 
+#### 1. Sign up and create a project
 
-<p align="center">
-    <a href="https://console.platform.sh/projects/create-project?template=https://raw.githubusercontent.com/platformsh/template-builder/master/templates/strapi/.platform.template.yaml&utm_content=strapi&utm_source=github&utm_medium=button&utm_campaign=deploy_on_platform">
-        <img src="https://platform.sh/images/deploy/lg-blue.svg" alt="Deploy on Platform.sh" width="180px" />
-    </a>
-</p>
+Before the workshop, you should take the time to deploy this repository on Platform.sh and create a free trial account. It doesn't take long, all you need to do is click the **Deploy on Platform.sh** above to start. 
 
 The button above will allow you to start a free trial account, give you access to the Platform.sh management console, and create your first project initialized with this repository. It has been configured to deploy automatically, and to seed data so that you can start working with real data on Platform.sh right away. 
 
 You will be asked for your personal information, what you would like to name the project, and the region you want the project to exist on. Usually we recommend selecting a region closest to the location of your customers, but feel free to choose any of the available regions - such as the one closest to your location. 
 
-### 2. Install the CLI
+#### 2. Install the CLI
 
 During the workshop we will inspect, modify, and interact with your project on Platform.sh while we set up Strapi. One of the most important tools for doing this is the Platform.sh CLI, so it will be helpful to have it installed before starting. 
 
@@ -49,7 +46,7 @@ curl -sS https://platform.sh/cli/installer | php
 >
 > In some Windows terminals you may need `php.exe` instead of `php`. Windows 10 users may run into some trouble later in the demo, especially when SSHing into the container and when importing the demo database. Let us know in `#platformsh-workshop` if you are using Windows 10 so that we can help you set up the CLI while the conference is going on.
 
-### 3. Log into your account locally
+#### 3. Log into your account locally
 
 In order to inspect and communicate with your project from the terminal, you will need to authenticate through the CLI. 
 
@@ -57,7 +54,7 @@ In your terminal, run the command `platform login`. This command will set up a c
 
 Once you're logged in and created your project in step **1**, you can view it with the command `platform list`. Your project will have a project ID associated with it, and you can further inspect information about the project with the command `platform project:info -p PROJECT_ID`
 
-### 4. Clone locally
+#### 4. Clone locally
 
 Once you have created a project and installed the CLI, you're nearly ready for the workshop. Since you will be modifying the codebase locally throughout, you will need to clone a copy of it on your computer. Using the same project ID in the previous section, run the command:
 
@@ -65,11 +62,11 @@ Once you have created a project and installed the CLI, you're nearly ready for t
 platform project:get -p PROJECT_ID
 ```
 
-### 5. (Optional) Creating and admin user
+#### 5. (Optional) Creating and admin user
 
 Once you have deployed this repository, you will have a demo Strapi instance available on your project that will be accessible from a generated url of the form `api.master-<hash_string>.<REGION>.platform.site`. 
 
-## The Workshop
+### Workshop outline
 
 During StrapiConf, members of the Platform.sh team will be present on the StrapiConf Discord in the following channels:
 
