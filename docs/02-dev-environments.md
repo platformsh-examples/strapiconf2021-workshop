@@ -42,4 +42,4 @@ OpenAPI specs are important because not only will they allow you to write tests 
 
 Now your API specification can be shared with the public, with other developers working on the application, and with API testing frameworks like Postman - for every environment.
 
-Move onto [environment variables](03-env-variables.md).
+Move onto [managed services](03-managed-services.md).
