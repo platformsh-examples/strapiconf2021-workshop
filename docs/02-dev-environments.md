@@ -8,7 +8,6 @@
 
 At any time you can branch your production environment into a development environment, which will contain a byte-level copy of your application code, your infrastructure configuration, and your production data. Once you have done that, you can test changes to code and infrastructure to generate a new build image that can become the production application. 
 
-https://docs.platform.sh/images/management-console/environments.png
 <p align="center">
     <img src="https://docs.platform.sh/images/management-console/environments.png" />
 </p>
