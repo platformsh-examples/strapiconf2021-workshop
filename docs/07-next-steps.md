@@ -28,6 +28,12 @@ Congrats! You've completed the workshop. Together we've deployed Strapi's FoodAd
 - Editorial workflows and the flow of data on Platform.sh
 - Lifecycle hooks & Gatsby Live Preview/Incremental builds
 
+## Bonus!
+
+Not satisfied with how the data ends up looking on the final production site? Me neither! 
+
+Branch a new environment off of `master` and go through the [multi-app configuration steps](05-multi-app.md) to see the complete site using SQLite. 
+
 ## Additional resources
 
 - [Platform.sh site](https://platform.sh/marketplace/strapi/)
