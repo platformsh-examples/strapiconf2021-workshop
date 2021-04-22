@@ -20,7 +20,7 @@ Strapi automatically generates an OpenAPI 3.0 specification of your api when it 
 OpenAPI specs are important because not only will they allow you to write tests with tools like Postman and Newman, but it gives you the option to make your API public and consumable by everyone. With the specification, anyone can write an application to consume your data, including additional apps in this project (more on this later). 
 
 1. `platform environment:branch spec`
-2. Add the following `locations` block to your `web` key in `strapi/.platform.app.yaml`
+2. **Add the following `locations` block to your `web` key in `strapi/.platform.app.yaml`**
 
     ```yaml
     web:
