@@ -6,5 +6,11 @@
   <h1 align="center">An introduction to Strapi on Platform.sh</h1>
 </p>
 
+# Platform.sh
+
+- Git-driven infrastructure
+- Infrastructure-as-code
+- 
+
 
 Move onto [development environments](02-dev-environments.md).
