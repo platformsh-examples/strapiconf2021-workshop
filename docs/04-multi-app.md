@@ -60,9 +60,6 @@ On Platform.sh, we can keep this codebase in the same repository as Strapi, nest
         build: |
             # Install dependencies with yarn.
             yarn --ignore-optional --frozen-lockfile
-        deploy: |
-            set -e
-            export CI=true && yarn test
 
     web:
         commands: 
