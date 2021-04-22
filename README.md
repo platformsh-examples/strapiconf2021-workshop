@@ -3,12 +3,15 @@
     <img src="https://pbs.twimg.com/card_img/1384519264758079489/bLloyf2B?format=jpg&name=900x900" />
   </a>
 
-  <h2 align="center">Build a production Strapi instance service by service with Platform.sh</h2>
+  <h1 align="center">Build a production Strapi instance service <br />by service with Platform.sh</h1>
 
   <p align="center">
     <strong>StrapiConf 2021 - Thursday, April 22 | 1:30PM PST</strong>
     <br />
+      <br />
+  <h2 align="center">Hello StrapiConf!</h2>
     <br />
+        <br />
       <a href="https://console.platform.sh/projects/create-project?template=https://raw.githubusercontent.com/platformsh/template-builder/master/templates/strapi/.platform.template.yaml&utm_content=strapi&utm_source=github&utm_medium=button&utm_campaign=deploy_on_platform">
         <img src="https://platform.sh/images/deploy/lg-blue.svg" alt="Deploy on Platform.sh" width="180px" />
     </a>
