@@ -84,4 +84,4 @@ module.exports = ({ env }) => ({
 9. Verify that you can click the *Forgot password* link, submit, and receive an email to reset your password. 
 10. `platform merge email`
 
-Move onto [multi-app configuration](04-multi-app.md).
+Move onto [multi-app configuration](05-multi-app.md).
