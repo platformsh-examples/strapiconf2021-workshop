@@ -86,4 +86,4 @@ On Platform.sh, we can keep this codebase in the same repository as Strapi, nest
 8. `git add . && git commit -m "Add a frontend app."`
 9. `git push platform frontend`
 
-Move onto [testing](05-testing.md).
+Move onto [testing](06-testing.md).
