@@ -28,9 +28,8 @@ In the FoodAdvisor demo, there is already a test defined for the frontend React 
 
 All we need to do is place the call for this test (`yarn test`) into one of our hooks.
 
-1. `git checkout master`
-2. `platform environment:branch tests`
-3. **Add the following deploy hook to `client/.platform.app.yaml`**:
+1. `platform environment:branch tests`
+2. **Add the following deploy hook to `client/.platform.app.yaml`**:
 
     ```yaml
     deploy: |
@@ -40,11 +39,13 @@ All we need to do is place the call for this test (`yarn test`) into one of our 
     
 In the block above we call the test after the frontend app has already started running in the start command, preceded by `set -e`. `set -e` ensures that should the tests fail, the deployment will fail, which allows us to place restrictions on our repository (i.e. cannot merge without passing deployment & passed tests). 
 
-4. `git add . && git commit -m "Add a test to the frontend."`
-5. `git push platform tests`
+3. `git add . && git commit -m "Add a test to the frontend."`
+4. `git push origin tests`
 
 Watch the activity log in the management console for the `tests` environment. The test should pass, giving you a successful deployment. 
 
-6. `platform merge tests`
+5. `platform merge tests`
+6. `git checkout master`
+7. `git merge tests`
 
 Move onto [next steps](07-next-steps.md).
