@@ -1,9 +1,9 @@
 <p align="center">
   <a href="https://platform.sh/marketplace/strapi">
-    <img src="https://pbs.twimg.com/card_img/1384519264758079489/bLloyf2B?format=jpg&name=900x900" />
+    <img src="docs/images/cta-blocks.jpg" />
   </a>
 
-  <h1 align="center">Build a production Strapi instance service <br />by service with Platform.sh</h1>
+  <!-- <h1 align="center">Build a production Strapi instance service <br />by service with Platform.sh</h1> -->
 
   <p align="center">
     <strong>StrapiConf 2021 - Thursday, April 22 | 1:30PM PST</strong>
@@ -12,6 +12,9 @@
       <a href="https://console.platform.sh/projects/create-project?template=https://github.com/platformsh-examples/strapiconf2021-workshop.git">
         <img src="https://platform.sh/images/deploy/lg-blue.svg" alt="Deploy on Platform.sh" width="200px" />
     </a>
+                <br />
+        <br />
+                      <a href="https://www.youtube.com/watch?v=yqt6zNNOL1Y">Watch the workshop on YouTube</a>
         <br />
     <br />
 

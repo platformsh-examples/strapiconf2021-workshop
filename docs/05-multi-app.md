@@ -1,6 +1,6 @@
 <p align="center">
   <a href="https://platform.sh/marketplace/strapi/">
-    <img src="https://platform.sh/images/spots/arrows/fast-dev.svg" />
+    <img src="https://platform.sh/images/spots/tech/add-apps.svg" />
   </a>
 
   <h1 align="center">Multi-app configuration</h1>
